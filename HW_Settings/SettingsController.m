@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.rowHeight = 44;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -55,7 +56,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *defaultCell = [UITableViewCell new];
+    UITableViewCell *defaultCell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
     if ([self.nodes[indexPath.row] isKindOfClass:[GroupNode class]]) {
         GroupNode *groupNode = self.nodes[indexPath.row];
         BaseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BaseCell"];
@@ -74,20 +75,17 @@
         SwitchCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SwitchCell"];
         cell.title.text = (boolNode.title ? boolNode.title : @"No title");
         [cell.switcher setOn:boolNode.value];
-        NSLog(@"%ld", indexPath.row);
         return cell;
     }
     return defaultCell;
 }
 
-- (IBAction)switchToggled:(id)sender {
-    UISwitch *switcher = (UISwitch *)sender;
-    UITableViewCell *switchCell = (UITableViewCell *)switcher.superview;
-//    SettingsController *sTableView = (SettingsController *)switchCell.superview.superview;
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:switcher.center];
-//    NSIndexPath *indexPath = [self.tableView indexPathForCell:switchCell];
-    
-    NSLog(@"%ld", indexPath.row);
+- (IBAction)switchToggled:(UISwitch *)switcher {
+    UITableViewCell *switchCell = (UITableViewCell *)switcher.superview.superview;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:switchCell];
+    BoolNode *boolNode = self.nodes[indexPath.row];
+    boolNode.value = switcher.on;
+    [[SettingsDataProvider shared] saveNodes];
 }
 
 
