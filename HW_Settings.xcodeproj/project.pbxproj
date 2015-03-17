@@ -168,6 +168,7 @@
 		A87069EA1AAAD8B5001AA6E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B25DD0ED1AB20A94003EEE9D /* Cells */,
 				A81D057F1AA8EF3100F204A5 /* Main.storyboard */,
 				A81D05841AA8EF3100F204A5 /* LaunchScreen.xib */,
 			);
@@ -177,7 +178,6 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B25DD0ED1AB20A94003EEE9D /* Cells */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
