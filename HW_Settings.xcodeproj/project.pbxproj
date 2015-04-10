@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84115AC81AB910D80055B7FB /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84115AC71AB910D80055B7FB /* DetailCell.m */; };
+		84115ACB1AB914B90055B7FB /* SecondSettingControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84115ACA1AB914B90055B7FB /* SecondSettingControllerViewController.m */; };
+		84A491071AB5BA6F00635E42 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A491061AB5BA6F00635E42 /* BaseCell.m */; };
+		84A4910A1AB5CE6A00635E42 /* SwithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A491091AB5CE6A00635E42 /* SwithCell.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84115AC61AB910D80055B7FB /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		84115AC71AB910D80055B7FB /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		84115AC91AB914B90055B7FB /* SecondSettingControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondSettingControllerViewController.h; sourceTree = "<group>"; };
+		84115ACA1AB914B90055B7FB /* SecondSettingControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondSettingControllerViewController.m; sourceTree = "<group>"; };
+		84A491051AB5BA6F00635E42 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		84A491061AB5BA6F00635E42 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		84A491081AB5CE6A00635E42 /* SwithCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwithCell.h; sourceTree = "<group>"; };
+		84A491091AB5CE6A00635E42 /* SwithCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwithCell.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -165,10 +177,18 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84115AC91AB914B90055B7FB /* SecondSettingControllerViewController.h */,
+				84115ACA1AB914B90055B7FB /* SecondSettingControllerViewController.m */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
+				84A491051AB5BA6F00635E42 /* BaseCell.h */,
+				84A491061AB5BA6F00635E42 /* BaseCell.m */,
+				84A491081AB5CE6A00635E42 /* SwithCell.h */,
+				84115AC61AB910D80055B7FB /* DetailCell.h */,
+				84115AC71AB910D80055B7FB /* DetailCell.m */,
+				84A491091AB5CE6A00635E42 /* SwithCell.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -275,6 +295,10 @@
 			files = (
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				84115AC81AB910D80055B7FB /* DetailCell.m in Sources */,
+				84A491071AB5BA6F00635E42 /* BaseCell.m in Sources */,
+				84A4910A1AB5CE6A00635E42 /* SwithCell.m in Sources */,
+				84115ACB1AB914B90055B7FB /* SecondSettingControllerViewController.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
@@ -403,9 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HW_Settings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HW_Settings/HW_Settings-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,9 +440,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HW_Settings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HW_Settings/HW_Settings-Bridging-Header.h";
 			};
 			name = Release;
 		};
