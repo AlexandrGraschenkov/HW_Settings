@@ -170,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				A81D057F1AA8EF3100F204A5 /* Main.storyboard */,
+				84A491061AB5BA6F00635E42 /* BaseCell.m */,
+				84A491051AB5BA6F00635E42 /* BaseCell.h */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -183,8 +185,6 @@
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
-				84A491051AB5BA6F00635E42 /* BaseCell.h */,
-				84A491061AB5BA6F00635E42 /* BaseCell.m */,
 				84A491081AB5CE6A00635E42 /* SwithCell.h */,
 				84115AC61AB910D80055B7FB /* DetailCell.h */,
 				84115AC71AB910D80055B7FB /* DetailCell.m */,

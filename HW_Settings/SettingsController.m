@@ -27,7 +27,6 @@ NSArray *arr;
 - (void)viewDidLoad {
     [super viewDidLoad];
      arr = [[NSArray alloc] initWithObjects:@"BaseCell", @"DetailCell", @"SwitchCell", nil];
-
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -53,7 +52,7 @@ NSArray *arr;
     if ([self.nodes[indexPath.row] isKindOfClass:[SelectNode class]]) {
         SelectNode *selectNode = self.nodes[indexPath.row];
         DetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
-        cell.tittle.text = (selectNode.title ? selectNode.title : @"No title");
+        cell.textLabel.text = (selectNode.title ? selectNode.title : @"No title");
         cell.detail.text = (selectNode.value ? [NSString stringWithFormat:@"%@", selectNode.value] : @"not selected");
         return cell;
     }
@@ -75,22 +74,28 @@ NSArray *arr;
     BoolNode *boolNode = self.nodes[indexPath.row];
     boolNode.value = switcher.on;
     [[SettingsDataProvider shared] saveNodes];
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+
+    NSString *s = @"Настройкssи";
+    GroupNode *groupNode = self.nodes[indexPath.row];
+    s = (groupNode.title ? groupNode.title : @"No title");
+    
     if ([segue.identifier isEqualToString:@"segueToSettingsController"]) {
         SettingsController *settingsController = segue.destinationViewController;
         GroupNode *groupNode = self.nodes[indexPath.row];
         settingsController.nodes = groupNode.nodes;
+        settingsController.navigationItem.title = s;
     }
+    
     if ([segue.identifier isEqualToString:@"segueToDetail"]) {
         SecondSettingControllerViewController *detail = segue.destinationViewController;
         SelectNode *selectNode = self.nodes[indexPath.row];
         detail.node = selectNode;
+        [detail.navigationItem setTitle:s];
     }
-    
 }
 
 
