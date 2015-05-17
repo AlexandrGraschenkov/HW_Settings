@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842413581B07DD900031F1DF /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842413571B07DD900031F1DF /* BaseCell.m */; };
+		8424135B1B07DE2D0031F1DF /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8424135A1B07DE2D0031F1DF /* DetailCell.m */; };
+		8424135E1B07DE7A0031F1DF /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8424135D1B07DE7A0031F1DF /* SwitchCell.m */; };
+		842413621B07E1A40031F1DF /* DetailsSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842413611B07E1A40031F1DF /* DetailsSettingController.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		842413561B07DD900031F1DF /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		842413571B07DD900031F1DF /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		842413591B07DE2D0031F1DF /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		8424135A1B07DE2D0031F1DF /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		8424135C1B07DE7A0031F1DF /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		8424135D1B07DE7A0031F1DF /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		842413601B07E1A40031F1DF /* DetailsSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsSettingController.h; sourceTree = "<group>"; };
+		842413611B07E1A40031F1DF /* DetailsSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsSettingController.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8424135F1B07E08A0031F1DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8424135C1B07DE7A0031F1DF /* SwitchCell.h */,
+				8424135D1B07DE7A0031F1DF /* SwitchCell.m */,
+				842413561B07DD900031F1DF /* BaseCell.h */,
+				842413591B07DE2D0031F1DF /* DetailCell.h */,
+				8424135A1B07DE2D0031F1DF /* DetailCell.m */,
+				842413571B07DD900031F1DF /* BaseCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		A81D05691AA8EF3100F204A5 = {
 			isa = PBXGroup;
 			children = (
@@ -165,8 +190,11 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8424135F1B07E08A0031F1DF /* Cells */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
+				842413601B07E1A40031F1DF /* DetailsSettingController.h */,
+				842413611B07E1A40031F1DF /* DetailsSettingController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
 			);
@@ -273,14 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842413621B07E1A40031F1DF /* DetailsSettingController.m in Sources */,
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				842413581B07DD900031F1DF /* BaseCell.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
 				A81D05A11AA8F2E000F204A5 /* SelectNode.m in Sources */,
 				A81D05AA1AA8F8D800F204A5 /* SettingsDataProvider.m in Sources */,
 				A81D05781AA8EF3100F204A5 /* main.m in Sources */,
+				8424135E1B07DE7A0031F1DF /* SwitchCell.m in Sources */,
+				8424135B1B07DE2D0031F1DF /* DetailCell.m in Sources */,
 				A87069EE1AAADB64001AA6E9 /* BoolNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_Settings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HW_Settings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

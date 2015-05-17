@@ -69,12 +69,12 @@
     SelectNode *resolutionSelect = [[SelectNode alloc] initWithKey:@"resolution" title:@"Разрешение"];
     resolutionSelect.allowedValues = @[@"1280x720", @"1024x768", @"800x600"];
     SelectNode *qualitySelect = [[SelectNode alloc] initWithKey:@"quality" title:@"Качество"];
-    qualitySelect.allowedValues = @[@"Охрененное", @"Пойдет", @"Не очень"];
+    qualitySelect.allowedValues = @[@"Шикарное", @"Сойдет", @"Не очень"];
     BoolNode *verticalSynchronization = [[BoolNode alloc] initWithKey:@"vert_sync" title:@"Вертикальная синхронизация"];
     groupVideo.nodes = @[resolutionSelect, qualitySelect, verticalSynchronization];
     
-    
-    GroupNode *groupAudio = [[GroupNode alloc] initWithKey:@"autdio_settings" title:@"Настрйоки звука"];
+
+    GroupNode *groupAudio = [[GroupNode alloc] initWithKey:@"autdio_settings" title:@"Настройки звука"];
     BoolNode *enableAudio = [[BoolNode alloc] initWithKey:@"enable" title:@"Звук включен"];
     SelectNode *doesntMatter = [[SelectNode alloc] initWithKey:@"sami_pridumaite" title:@"Че нить"];
     doesntMatter.allowedValues = @[@"Тут", @"можно", @"написать", @"много", @"вариантов", @"но", @"мы", @"остановимся", @"на", @"десяти"];
