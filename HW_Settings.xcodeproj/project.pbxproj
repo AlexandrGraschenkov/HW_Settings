@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8791594F1B09BA3300FF2667 /* DetailSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8791594E1B09BA3300FF2667 /* DetailSettingsController.m */; };
+		879159561B09BA4200FF2667 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 879159511B09BA4200FF2667 /* BaseCell.m */; };
+		879159571B09BA4200FF2667 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 879159531B09BA4200FF2667 /* DetailCell.m */; };
+		879159581B09BA4200FF2667 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 879159551B09BA4200FF2667 /* SwitchCell.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8791594D1B09BA3300FF2667 /* DetailSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailSettingsController.h; sourceTree = "<group>"; };
+		8791594E1B09BA3300FF2667 /* DetailSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailSettingsController.m; sourceTree = "<group>"; };
+		879159501B09BA4200FF2667 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		879159511B09BA4200FF2667 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		879159521B09BA4200FF2667 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		879159531B09BA4200FF2667 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		879159541B09BA4200FF2667 /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		879159551B09BA4200FF2667 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,7 +117,6 @@
 				A87069EB1AAAD8BE001AA6E9 /* ViewController */,
 				A87069EA1AAAD8B5001AA6E9 /* View */,
 				A81D05821AA8EF3100F204A5 /* Images.xcassets */,
-				A81D05841AA8EF3100F204A5 /* LaunchScreen.xib */,
 				A81D05751AA8EF3100F204A5 /* Supporting Files */,
 			);
 			path = HW_Settings;
@@ -158,6 +169,13 @@
 			isa = PBXGroup;
 			children = (
 				A81D057F1AA8EF3100F204A5 /* Main.storyboard */,
+				A81D05841AA8EF3100F204A5 /* LaunchScreen.xib */,
+				879159501B09BA4200FF2667 /* BaseCell.h */,
+				879159511B09BA4200FF2667 /* BaseCell.m */,
+				879159521B09BA4200FF2667 /* DetailCell.h */,
+				879159531B09BA4200FF2667 /* DetailCell.m */,
+				879159541B09BA4200FF2667 /* SwitchCell.h */,
+				879159551B09BA4200FF2667 /* SwitchCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -165,6 +183,8 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8791594D1B09BA3300FF2667 /* DetailSettingsController.h */,
+				8791594E1B09BA3300FF2667 /* DetailSettingsController.m */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
@@ -274,13 +294,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
+				8791594F1B09BA3300FF2667 /* DetailSettingsController.m in Sources */,
+				879159571B09BA4200FF2667 /* DetailCell.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				879159581B09BA4200FF2667 /* SwitchCell.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
 				A81D05A11AA8F2E000F204A5 /* SelectNode.m in Sources */,
 				A81D05AA1AA8F8D800F204A5 /* SettingsDataProvider.m in Sources */,
 				A81D05781AA8EF3100F204A5 /* main.m in Sources */,
+				879159561B09BA4200FF2667 /* BaseCell.m in Sources */,
 				A87069EE1AAADB64001AA6E9 /* BoolNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
