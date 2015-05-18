@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C0054E1B097C0A0046F3FF /* DetailSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0054D1B097C0A0046F3FF /* DetailSettingsController.m */; };
+		84C005521B097CF90046F3FF /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C005511B097CF90046F3FF /* TableViewCell1.m */; };
+		84C005551B097D100046F3FF /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C005541B097D100046F3FF /* TableViewCell2.m */; };
+		84C005581B097D240046F3FF /* Switch.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C005571B097D240046F3FF /* Switch.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84C0054C1B097C0A0046F3FF /* DetailSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailSettingsController.h; sourceTree = "<group>"; };
+		84C0054D1B097C0A0046F3FF /* DetailSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailSettingsController.m; sourceTree = "<group>"; };
+		84C005501B097CF90046F3FF /* TableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell1.h; sourceTree = "<group>"; };
+		84C005511B097CF90046F3FF /* TableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell1.m; sourceTree = "<group>"; };
+		84C005531B097D100046F3FF /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
+		84C005541B097D100046F3FF /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
+		84C005561B097D240046F3FF /* Switch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Switch.h; sourceTree = "<group>"; };
+		84C005571B097D240046F3FF /* Switch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Switch.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C0054F1B097CDC0046F3FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84C005501B097CF90046F3FF /* TableViewCell1.h */,
+				84C005511B097CF90046F3FF /* TableViewCell1.m */,
+				84C005531B097D100046F3FF /* TableViewCell2.h */,
+				84C005541B097D100046F3FF /* TableViewCell2.m */,
+				84C005561B097D240046F3FF /* Switch.h */,
+				84C005571B097D240046F3FF /* Switch.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		A81D05691AA8EF3100F204A5 = {
 			isa = PBXGroup;
 			children = (
@@ -165,10 +190,13 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				84C0054F1B097CDC0046F3FF /* Cells */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
+				84C0054C1B097C0A0046F3FF /* DetailSettingsController.h */,
+				84C0054D1B097C0A0046F3FF /* DetailSettingsController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -273,12 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C005521B097CF90046F3FF /* TableViewCell1.m in Sources */,
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
+				84C0054E1B097C0A0046F3FF /* DetailSettingsController.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				84C005581B097D240046F3FF /* Switch.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
 				A81D05A11AA8F2E000F204A5 /* SelectNode.m in Sources */,
+				84C005551B097D100046F3FF /* TableViewCell2.m in Sources */,
 				A81D05AA1AA8F8D800F204A5 /* SettingsDataProvider.m in Sources */,
 				A81D05781AA8EF3100F204A5 /* main.m in Sources */,
 				A87069EE1AAADB64001AA6E9 /* BoolNode.m in Sources */,
