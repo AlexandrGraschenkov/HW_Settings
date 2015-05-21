@@ -182,6 +182,7 @@
 		A87069EA1AAAD8B5001AA6E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23D37AEF1ADBC40B001FE92C /* cells */,
 				A81D057F1AA8EF3100F204A5 /* Main.storyboard */,
 			);
 			name = View;
@@ -190,7 +191,6 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				23D37AEF1ADBC40B001FE92C /* cells */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,

@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   // self.tableView.rowHeight = 44;
+    self.tableView.rowHeight = 44;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -32,16 +32,24 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSString *s = @"Настройки";
+    GroupNode *groupNode = self.nodes[indexPath.row];
+
+    s = (groupNode.title ? groupNode.title : @"No title");
+    
     if ([segue.identifier isEqualToString:@"Settings"]) {
         SettingsController *settingsController = segue.destinationViewController;
         GroupNode *groupNode = self.nodes[indexPath.row];
         settingsController.nodes = groupNode.nodes;
+        settingsController.navigationItem.title = s;
     }
     if ([segue.identifier isEqualToString:@"Details"]) {
         DetailsVC *detail = segue.destinationViewController;
         SelectNode *selectNode = self.nodes[indexPath.row];
         detail.node = selectNode;
+        [detail.navigationItem setTitle:s];
     }
 }
 #pragma mark - Table
@@ -54,13 +62,16 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *defaultCell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
+    
     if ([self.nodes[indexPath.row] isKindOfClass:[GroupNode class]]) {
         GroupNode *groupNode = self.nodes[indexPath.row];
         BaseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BaseCell"];
         cell.label.text = (groupNode.title ? groupNode.title : @"No title");
         return cell;
     }
+    
     if ([self.nodes[indexPath.row] isKindOfClass:[SelectNode class]]) {
         SelectNode *selectNode = self.nodes[indexPath.row];
         DetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
@@ -68,7 +79,9 @@
         cell.detailLabel.text = (selectNode.value ? [NSString stringWithFormat:@"%@", selectNode.value] : @"not selected");
         return cell;
     }
+    
     if ([self.nodes[indexPath.row] isKindOfClass:[BoolNode class]]) {
+        
         BoolNode *boolNode = self.nodes[indexPath.row];
         ChangedCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChangedCell"];
         cell.label.text = (boolNode.title ? boolNode.title : @"No title");
@@ -79,11 +92,13 @@
 }
 
 - (IBAction)switchToggled:(UISwitch *)switcher {
+    
     UITableViewCell *switchCell = (UITableViewCell *)switcher.superview.superview;
     NSIndexPath *indexPath = [self.tableView indexPathForCell:switchCell];
     BoolNode *boolNode = self.nodes[indexPath.row];
     boolNode.value = switcher.on;
     [[SettingsDataProvider shared] saveNodes];
+
 }
 
 
