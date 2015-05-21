@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23D37AEE1ADBC11E001FE92C /* DetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D37AED1ADBC11E001FE92C /* DetailsVC.m */; };
+		23D37AF51ADBC47B001FE92C /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D37AF41ADBC47B001FE92C /* BaseCell.m */; };
+		23D37AF81ADBC496001FE92C /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D37AF71ADBC496001FE92C /* DetailCell.m */; };
+		23D37AFB1ADBC515001FE92C /* ChangedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D37AFA1ADBC515001FE92C /* ChangedCell.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D37AEC1ADBC11E001FE92C /* DetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsVC.h; sourceTree = "<group>"; };
+		23D37AED1ADBC11E001FE92C /* DetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsVC.m; sourceTree = "<group>"; };
+		23D37AF31ADBC47B001FE92C /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		23D37AF41ADBC47B001FE92C /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		23D37AF61ADBC496001FE92C /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		23D37AF71ADBC496001FE92C /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		23D37AF91ADBC515001FE92C /* ChangedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangedCell.h; sourceTree = "<group>"; };
+		23D37AFA1ADBC515001FE92C /* ChangedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangedCell.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D37AEF1ADBC40B001FE92C /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				23D37AF31ADBC47B001FE92C /* BaseCell.h */,
+				23D37AF41ADBC47B001FE92C /* BaseCell.m */,
+				23D37AF61ADBC496001FE92C /* DetailCell.h */,
+				23D37AF71ADBC496001FE92C /* DetailCell.m */,
+				23D37AF91ADBC515001FE92C /* ChangedCell.h */,
+				23D37AFA1ADBC515001FE92C /* ChangedCell.m */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
 		A81D05691AA8EF3100F204A5 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +182,7 @@
 		A87069EA1AAAD8B5001AA6E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23D37AEF1ADBC40B001FE92C /* cells */,
 				A81D057F1AA8EF3100F204A5 /* Main.storyboard */,
 			);
 			name = View;
@@ -169,6 +195,8 @@
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
+				23D37AEC1ADBC11E001FE92C /* DetailsVC.h */,
+				23D37AED1ADBC11E001FE92C /* DetailsVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -275,12 +303,16 @@
 			files = (
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				23D37AF81ADBC496001FE92C /* DetailCell.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
+				23D37AEE1ADBC11E001FE92C /* DetailsVC.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
 				A81D05A11AA8F2E000F204A5 /* SelectNode.m in Sources */,
 				A81D05AA1AA8F8D800F204A5 /* SettingsDataProvider.m in Sources */,
 				A81D05781AA8EF3100F204A5 /* main.m in Sources */,
+				23D37AF51ADBC47B001FE92C /* BaseCell.m in Sources */,
+				23D37AFB1ADBC515001FE92C /* ChangedCell.m in Sources */,
 				A87069EE1AAADB64001AA6E9 /* BoolNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
