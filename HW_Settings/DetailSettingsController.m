@@ -25,7 +25,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     if ([self.node.value isEqual:self.node.allowedValues[indexPath.row]]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
