@@ -23,6 +23,7 @@
 
 @implementation SettingsController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -55,6 +56,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *defaultCell = [tableView dequeueReusableCellWithIdentifier:@"SecondCell"];
     if ([self.nodes[indexPath.row] isKindOfClass:[GroupNode class]]) {
         GroupNode *groupNode = self.nodes[indexPath.row];

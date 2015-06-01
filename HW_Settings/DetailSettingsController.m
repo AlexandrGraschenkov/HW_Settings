@@ -9,6 +9,7 @@
 #import "DetailSettingsController.h"
 #import "SettingsDataProvider.h"
 
+
 @implementation DetailSettingsController
 
 - (void)viewDidLoad {
