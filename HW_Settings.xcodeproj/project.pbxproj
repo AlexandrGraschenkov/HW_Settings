@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA063331AB845D400A2C2EA /* DetailSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA063321AB845D400A2C2EA /* DetailSettingsController.m */; };
+		1AA063371AB846A000A2C2EA /* FirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA063361AB846A000A2C2EA /* FirstCell.m */; };
+		1AA0633A1AB846E800A2C2EA /* SecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA063391AB846E800A2C2EA /* SecondCell.m */; };
+		1AA0633D1AB846F800A2C2EA /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA0633C1AB846F800A2C2EA /* SwitchCell.m */; };
 		A81D05781AA8EF3100F204A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D05771AA8EF3100F204A5 /* main.m */; };
 		A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057A1AA8EF3100F204A5 /* AppDelegate.m */; };
 		A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A81D057D1AA8EF3100F204A5 /* SettingsController.m */; };
@@ -33,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA063311AB845D400A2C2EA /* DetailSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailSettingsController.h; sourceTree = "<group>"; };
+		1AA063321AB845D400A2C2EA /* DetailSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailSettingsController.m; sourceTree = "<group>"; };
+		1AA063351AB846A000A2C2EA /* FirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCell.h; sourceTree = "<group>"; };
+		1AA063361AB846A000A2C2EA /* FirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCell.m; sourceTree = "<group>"; };
+		1AA063381AB846E800A2C2EA /* SecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCell.h; sourceTree = "<group>"; };
+		1AA063391AB846E800A2C2EA /* SecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCell.m; sourceTree = "<group>"; };
+		1AA0633B1AB846F800A2C2EA /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		1AA0633C1AB846F800A2C2EA /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
 		A81D05721AA8EF3100F204A5 /* HW_Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81D05761AA8EF3100F204A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81D05771AA8EF3100F204A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA063341AB8465E00A2C2EA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1AA063351AB846A000A2C2EA /* FirstCell.h */,
+				1AA063361AB846A000A2C2EA /* FirstCell.m */,
+				1AA063381AB846E800A2C2EA /* SecondCell.h */,
+				1AA063391AB846E800A2C2EA /* SecondCell.m */,
+				1AA0633B1AB846F800A2C2EA /* SwitchCell.h */,
+				1AA0633C1AB846F800A2C2EA /* SwitchCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		A81D05691AA8EF3100F204A5 = {
 			isa = PBXGroup;
 			children = (
@@ -165,8 +190,11 @@
 		A87069EB1AAAD8BE001AA6E9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1AA063341AB8465E00A2C2EA /* TableViewCells */,
 				A81D057C1AA8EF3100F204A5 /* SettingsController.h */,
 				A81D057D1AA8EF3100F204A5 /* SettingsController.m */,
+				1AA063311AB845D400A2C2EA /* DetailSettingsController.h */,
+				1AA063321AB845D400A2C2EA /* DetailSettingsController.m */,
 				A87069F21AAB6670001AA6E9 /* ViewController.h */,
 				A87069F31AAB6670001AA6E9 /* ViewController.m */,
 			);
@@ -274,13 +302,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81D057E1AA8EF3100F204A5 /* SettingsController.m in Sources */,
+				1AA063331AB845D400A2C2EA /* DetailSettingsController.m in Sources */,
+				1AA0633A1AB846E800A2C2EA /* SecondCell.m in Sources */,
 				A81D059E1AA8F07200F204A5 /* BaseNode.m in Sources */,
+				1AA0633D1AB846F800A2C2EA /* SwitchCell.m in Sources */,
 				A81D057B1AA8EF3100F204A5 /* AppDelegate.m in Sources */,
 				A87069F41AAB6670001AA6E9 /* ViewController.m in Sources */,
 				A81D05A71AA8F6D600F204A5 /* GroupNode.m in Sources */,
 				A81D05A11AA8F2E000F204A5 /* SelectNode.m in Sources */,
 				A81D05AA1AA8F8D800F204A5 /* SettingsDataProvider.m in Sources */,
 				A81D05781AA8EF3100F204A5 /* main.m in Sources */,
+				1AA063371AB846A000A2C2EA /* FirstCell.m in Sources */,
 				A87069EE1AAADB64001AA6E9 /* BoolNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
