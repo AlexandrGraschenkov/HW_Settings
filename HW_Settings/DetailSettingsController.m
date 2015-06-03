@@ -25,9 +25,11 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if ([self.node.value isEqual:self.node.allowedValues[indexPath.row]]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
     id title = self.node.allowedValues[indexPath.row];
     cell.textLabel.text = (!title ? @"No title" : [NSString stringWithFormat:@"%@", title]);
